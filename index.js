@@ -989,7 +989,7 @@ function createQuestionElement(questionData, index) {
   });
 
   // TODO временно проставляем ответы!
-  questionInputs[0].checked = true;
+  // questionInputs[0].checked = true;
 
   return questionElem;
 }

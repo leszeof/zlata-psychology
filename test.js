@@ -31,7 +31,7 @@ const QUESTIONS = [
   {
     id: 5,
     questionCategory: 1,
-    text: "Узнаю по шагах, кто вошёл в комнату",
+    text: "Узнаю по шагам, кто вошёл в комнату",
   },
   {
     id: 6,
@@ -380,7 +380,7 @@ function createQuestionElement(questionData, index) {
   });
 
   // TODO временно проставляем ответы!
-  questionInputs[0].checked = true;
+  // questionInputs[0].checked = true;
 
   return questionElem;
 }

@@ -105,6 +105,19 @@
   text-decoration: underline;
 }
 
+.submit-button {
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -124,6 +137,8 @@
 
 .navigation-header {
   margin: 0;
+
+  margin-bottom: 15px;
 }
 
 .navigation-list {
