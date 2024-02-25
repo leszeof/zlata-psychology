@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../pages/index.css">
+  <script src="./test.js" defer></script>
+  <title>Тест "Что говорят вам мимика и жесты"</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <h3 class="navigation-logo">Сайт Златы Золотовой</h3>
+      <div class="navigation-container">
+        <p class="navigation-header">Меню:</p>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="../../index.html" rel="noopener">Вернуться к меню</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <hr>
+
+  <section class="test-container">
+    <h2>Тест "Что говорят вам мимика и жесты"</h2>
+
+    <form class="questionnaire">
+      <button class="submit-button" type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <div class="my-class user-results-modal">
+    <div class="popup__container">
+      <details>
+        <summary class="spoiler">Как расшифровывать результаты</summary>
+
+        <div>
+          <p class="bold-text">56-77 балла</p>
+          <div>
+            У вас отличная интуиция, вы обладаете способностью понимать других людей, у вас есть наблюдательность и
+            чутье. Но вы слишком сильно полагаетесь в своих суждениях на эти качества, слова имеют для вас
+            второстепенное значение. Ваши «приговоры» поспешны, и в этом кроется опасность ошибки. Делайте на это
+            поправку, и у вас есть все шансы научиться прекрасно разбираться в людях.
+          </div>
+        </div>
+
+        <hr>
+
+        <div>
+          <p class="bold-text">34-55 балла</p>
+          <div>
+            Вам доставляет определенное удовольствие наблюдать за другими людьми, и Вы неплохо интерпретируете их мимику
+            и жесты. Но вы плохо умеете использовать эту информацию в реальной жизни, например, для того, чтобы
+            правильно строить свои отношения с окружающими. Развивайте интуицию и больше полагайтесь на нее.
+          </div>
+        </div>
+
+        <hr>
+
+        <div>
+          <p class="bold-text">11-33 балла</p>
+          <div>
+            Вам очень трудно оценивать людей. Дело не в том, что Вы на это не способны, просто Вы не предаете этому
+            должного значения. Тренируйте наблюдательность.
+          </div>
+        </div>
+      </details>
+
+      <div class="results">
+        <hr>
+        <h3>Ваши результаты:</h3>
+        <p>
+          Всего баллов:
+          <span class="bold-text total"></span>
+        </p>
+
+        <hr>
+        <span class="dominant-category-ps italic-text bold-text"></span>
+      </div>
+    </div>
+  </div>
+
+  <template class="question-template">
+    <fieldset class="question-item">
+      <legend class="question-text"></legend>
+      <ul class="question-variants"></ul>
+    </fieldset>
+  </template>
+
+  <template class="answer-template">
+    <li class="answer-item">
+      <label class="answer-label" for="#">
+        <input id="#" class="answer-input" type="#" name="#" value="true" required>
+        <span class="answer-text"></span>
+      </label>
+    </li>
+  </template>
+</body>
+
+</html>
