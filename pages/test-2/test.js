@@ -355,7 +355,6 @@ form.addEventListener('submit', (event) => {
 
 // рендеринг вопросов на старте
 function createQuestionElement(questionData, index) {
-  // console.log(questionData)
   const { text, id } = questionData;
 
   const questionElem = document

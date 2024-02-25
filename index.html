@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./index.css" rel="stylesheet">
-  <script src="./index.js" defer></script>
-  <title>Тест "Эмоциональное выгорание"</title>
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Злата Владимировна: Главная страница</title>
 </head>
 
 <body>
@@ -18,11 +17,15 @@
         <p class="navigation-header">Меню:</p>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="./index.html" rel="noopener">Тест "Эмоциональное
+            <a class="navigation-link" href="./pages/test-1/test.html" rel="noopener">Тест "Эмоциональное
               выгорание"</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="./test.html" rel="noopener">Тест "Тип восприятия"</a>
+            <a class="navigation-link" href="./pages/test-2/test.html" rel="noopener">Тест "Тип восприятия"</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="./pages/test-3/test.html" rel="noopener">Тест "Что говорят вам мимика и
+              жесты"</a>
           </li>
         </ul>
       </div>
@@ -30,210 +33,6 @@
   </header>
 
   <hr>
-
-  <section>
-    <h2>Тест "Эмоциональное выгорание"</h2>
-
-    <form class="questionnaire">
-      <button class="submit-button" type="submit">Отправить</button>
-    </form>
-  </section>
-
-  <div class="my-class user-results-modal">
-    <div class="popup__container">
-      <details>
-        <summary class="spoiler">Как расшифровывать результаты</summary>
-
-        <div>
-          <h4>1 фаза: напряжение психологических защит личности (Про что это?)</h4>
-          <p>Вроде бы всё нормально, но приглушаются эмоции, исчезает острота чувств и переживаний. Всё становится
-            скучным, на душе пусто, любимая работа не радует, возникает недовольство собой и даже появляется чувство
-            собственной бесполезности, и отсутствие выхода.</p>
-          <p>Внезапно, якобы беспричинно, активизируются внутренние конфликты личности, прежде дремавшие внутри, и
-            подкрадывается состояние депрессии.</p>
-        </div>
-
-        <div>
-          <h4>2 фаза: резистенция (сопротивление психологических защит) (Про что это?)</h4>
-          <p>Лица, с которыми человек работает, начинают его раздражать, особенно заказчики и посетители. Человек
-            начинает пренебрежительно относиться к ним, а затем - почти ненавидеть. При этом, «выгорающий» человек сам
-            не может понять причину нарастающей в нём волны раздражения.</p>
-          <p>В фазе резистенции возможности для работы в предлагаемом режиме практически исчерпаны, и психика человека
-            начинает бессознательно менять режим, удаляя факторы, ставшие стрессогенными: сочувствие, эмпатию,
-            сопереживание людям, и, желательно, самих людей тоже (дегуманизация): чем дальше люди – тем спокойнее.</p>
-        </div>
-
-        <div>
-          <h4>3 фаза: истощение (Про что это?)</h4>
-          <p>На этом этапе возникает утрата профессиональных ценностей и здоровья. По привычке специалист ещё сохраняет
-            свою респектабельность, но уже заметен «пустой взгляд» и «ледяное сердце». Само присутствие рядом другого
-            человека вызывает чувство дискомфорта и тошноты, вплоть до настоящей рвоты.</p>
-          <p>В этой фазе ресурсы психики полностью исчерпаны, включается психосоматика (велика вероятность инфарктов и
-            инсультов и т.п.)</p>
-        </div>
-
-        <h4>Порядок подсчета результатов:</h4>
-        <ul>
-          <li>Каждая <span class="bold-text italic-text">фаза</span> состоит из 4-х <span
-              class="bold-text italic-text">симптомов</span>.</li>
-          <li>Количественные показатели <span class="bold-text italic-text">симптома</span> – от 0 до 30 баллов.</li>
-          <li><span class="bold-text italic-text">Симптомы</span> с показателями <span class="bold-text italic-text">20
-              и
-              более</span> – являются <span class="bold-text italic-text">ДОМИНИРУЮЩИМ</span> в фазе или во всём
-            синдроме
-            эмоционального выгорания.</li>
-          <li>Количественные показатели <span class="bold-text italic-text">фазы</span> – от 0 до 120 баллов.</li>
-          <li>Фаза с показателями <span class="bold-text italic-text">60 и более</span> – является сформировавшейся
-            <span class="bold-text italic-text">фазой эмоционального выгорания.</span>
-          </li>
-        </ul>
-      </details>
-
-      <div class="results">
-        <hr>
-        <h3>Ваши результаты:</h3>
-        <p>
-          Всего баллов:
-          <span class="bold-text total"></span>
-        </p>
-
-        <hr>
-        <div>
-          <h4 class="bold-text">Фаза "Напряжение"</h4>
-          <p>
-            Сумма балов в фазе:
-            <span class="bold-text phase phase_1"></span>
-            <span class="dangerous-phase"></span>
-          </p>
-          <ul>
-            <li>
-              Переживание психотравматирующих обстоятельств:
-              <span class="category category_1 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-
-            <li>
-              Удовлетворённость собой:
-              <span class="category category_2 bold-text"></span>
-              <span class="dangerous-category"></span>
-            </li>
-
-            <li>
-              Загнанность в клетку:
-              <span class="category category_3 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-
-            <li>
-              Тревога и депрессия:
-              <span class="category category_4 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-          </ul>
-        </div>
-
-        <hr>
-        <div>
-          <h4 class="bold-text">Фаза "Резистентность"</h4>
-          <p>
-            Сумма балов в фазе:
-            <span class="bold-text phase phase_2"></span>
-            <span class="dangerous-phase"></span>
-          </p>
-          <ul>
-            <li>
-              Неадекватное избирательное эмоциональное реагирование:
-              <span class="category category_5 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-
-            <li>
-              Эмоционально-нравственная дезориентация:
-              <span class="category category_6 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-
-            <li>
-              Расширение сферы экономии эмоций:
-              <span class="category category_7 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-
-            <li>
-              Редукция профессиональных обязанностей:
-              <span class="category category_8 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-          </ul>
-        </div>
-
-        <hr>
-        <div>
-          <h4 class="bold-text">Фаза "Истощение"</h4>
-          <p>
-            Сумма балов в фазе:
-            <span class="bold-text phase phase_3"></span>
-            <span class="dangerous-phase"></span>
-          </p>
-          <ul>
-            <li>
-              Эмоциональный дефицит:
-              <span class="category category_9 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-
-            <li>
-              Эмоциональная отстранённость:
-              <span class="category category_10 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-
-            <li>
-              Личностная отстранённость (деперсонализация):
-              <span class="category category_11 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-
-            <li>
-              Психосоматические и психовегетативные нарушения:
-              <span class="category category_12 bold-text"></span>
-              <span class="dangerous-category"></span>
-              <p class="category-static-text"></p>
-            </li>
-          </ul>
-        </div>
-
-        <hr>
-        <span class="dominant-category-ps italic-text bold-text"></span>
-      </div>
-    </div>
-  </div>
-
-  <template class="question-template">
-    <fieldset class="question-item">
-      <legend class="question-text"></legend>
-      <div class="question-variants">
-        <label class="question-answer-label" for="#">
-          <input id="#" class="question-answer-input" type="radio" name="#" value="true" required>
-          <span>Да</span>
-        </label>
-        <label class="question-answer-label" for="#">
-          <input id="#" class="question-answer-input" type="radio" name="#" value="false" required>
-          <span>Нет</span>
-        </label>
-      </div>
-    </fieldset>
-  </template>
 </body>
 
 </html>
