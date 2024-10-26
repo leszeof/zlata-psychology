@@ -1,28 +1,15 @@
-/* .popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s linear, visibility 0.5s linear;
-  -webkit-transition: opacity 0.5s linear, visibility 0.5s linear;
-  -moz-transition: opacity 0.5s linear, visibility 0.5s linear;
-  -ms-transition: opacity 0.5s linear, visibility 0.5s linear;
-  -o-transition: opacity 0.5s linear, visibility 0.5s linear;
-} */
-
-.my-class {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.body-container {
   margin: 0 auto;
-  margin-bottom: 25px;
+  max-width: 768px;
+  margin-top: 30px;
+}
+
+/* секция с результатами теста (начало) */
+.user-results-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto;
 }
 
 .spoiler {
@@ -49,53 +36,6 @@
   border-radius: 10px;
 }
 
-.popup__close-button {
-  position: absolute;
-  top: -40px;
-  right: -40px;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background-image: url('../images/close-icon.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: opacity 0.5s linear;
-  -webkit-transition: opacity 0.5s linear;
-  -moz-transition: opacity 0.5s linear;
-  -ms-transition: opacity 0.5s linear;
-  -o-transition: opacity 0.5s linear;
-}
-
-.popup__close-button:hover {
-  opacity: 0.6;
-}
-
-.popup_opened {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s linear, visibility 0.5s linear;
-  -webkit-transition: opacity 0.5s linear, visibility 0.5s linear;
-  -moz-transition: opacity 0.5s linear, visibility 0.5s linear;
-  -ms-transition: opacity 0.5s linear, visibility 0.5s linear;
-  -o-transition: opacity 0.5s linear, visibility 0.5s linear;
-}
-
-.bold-text {
-  font-weight: bold;
-}
-
-.italic-text {
-  font-style: italic;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
 .dangerous-phase {
   color: red;
   font-style: italic;
@@ -118,7 +58,24 @@
 .submit-button:hover {
   cursor: pointer;
 }
+/* секция с результатами теста (конец) */
 
+/* общие стили (начало) */
+.bold-text {
+  font-weight: bold;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+/* общие стили (конец) */
+
+/* навигация (начало) */
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -139,6 +96,10 @@
   align-items: end;
 }
 
+.navigation-left-column {
+  justify-content: space-between;
+}
+
 .navigation-header {
   margin: 0;
 
@@ -156,7 +117,9 @@
 .navigation-link:hover {
   text-decoration: none;
 }
+/* навигация (конец) */
 
+/* наполнение теста (начало) */
 .question-variants {
   padding: 0;
   margin: 0;
@@ -173,6 +136,7 @@
 .answer-item {
   list-style-type: none;
 }
+/* наполнение теста (конец) */
 
 @media (max-width: 509px) {
   .navigation {

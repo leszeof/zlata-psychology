@@ -378,7 +378,7 @@ function createQuestionElement(questionData, index) {
     input.name = id;
   });
 
-  // TODO временно проставляем ответы!
+  // TODO (only dev) временно проставляем ответы!
   // questionInputs[0].checked = true;
 
   return questionElem;

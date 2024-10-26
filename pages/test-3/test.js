@@ -570,7 +570,7 @@ function createQuestionElement(questionData, index) {
   const answersContainer = questionElem.querySelector('.question-variants');
   const answerVariants = generateAnswersForQuestion({ answerOptions, parentId: id, isMultiplyAnswers });
 
-  // TODO временно проставляем ответы!
+  // TODO (only dev) временно проставляем ответы!
   // answerVariants[0].querySelector('.answer-input').checked = true;
 
   answersContainer.prepend(...answerVariants);
